@@ -23,9 +23,9 @@ void draw() {
   for(int r = 0; r < 250; r +=(int)(Math.random()*20)+10){
     for(int i = 0; i< 150; i+=(int)(Math.random()*20)+10){
       if (shift == true)
-        ellipse(400+i, r, 3, 3);
+        ellipse(400+i, r, 5, 5);
       else
-        ellipse(410+i, r, 3, 3);
+        ellipse(410+i, r, 5, 5);
     }
     if(shift == true)
       shift = false;
@@ -35,9 +35,9 @@ void draw() {
    for(int r = 0; r < 100; r +=(int)(Math.random()*20)+10){
     for(int i = 0; i< 150; i+=(int)(Math.random()*20)+10){
       if (shift == true)
-        ellipse(i, r, 3, 3);
+        ellipse(i, r, 5, 5);
       else
-        ellipse(10+i, r, 3, 3);
+        ellipse(10+i, r, 5, 5);
     }
     if(shift == true)
       shift = false;
@@ -49,9 +49,9 @@ void draw() {
    for(int r = 0; r < 250; r +=(int)(Math.random()*20)+10){
     for(int i = 0; i< 150; i+=(int)(Math.random()*20)+10){
       if (shift == true)
-        ellipse(200+i, r+400, 3, 3);
+        ellipse(200+i, r+400, 5, 5);
       else
-        ellipse(230+i, r+400, 3, 3);
+        ellipse(230+i, r+400, 5, 5);
     }
     if(shift == true)
       shift = false;
@@ -127,6 +127,8 @@ void bird(int x, int y){
   bezier(x+53, y+((int)190/2)-56, x+71, y+12, x+39, y+10, x+44, y+8);
   bezier(x+57, y+((int)190/2)-74, x+64, y+21, x+64, y+6, x+59, y+0);
   
+  stroke(222, 184, 58);
+  strokeWeight(1.6);
   //strokes for the drawing
   beginShape();
   vertex(x, y-((int)190/2));
@@ -139,7 +141,7 @@ void bird(int x, int y){
   //arc(x+24, y+8, 30, 36, 0, PI/2);
   line(x-55, y+4, x-60+random(5), y+4); // eye
   line(x-70, y+4, x-80, y+4); //beak
-  line(x+65, y-2, x+115, y-2); // upper leg
-  line(x+65, y+4, x+115, y+4); // lower leg
+  line(x+60, y-2, x+115, y-2); // upper leg
+  line(x+60, y+4, x+115, y+4); // lower leg
   endShape();
 }
