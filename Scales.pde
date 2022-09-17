@@ -126,6 +126,7 @@ void bird(int x, int y){
   bezier(x+49, y+((int)190/2)-44, x+65, y+20, x+33, y+10, x+38, y+12);
   bezier(x+53, y+((int)190/2)-56, x+71, y+12, x+39, y+10, x+44, y+8);
   bezier(x+57, y+((int)190/2)-74, x+64, y+21, x+64, y+6, x+59, y+0);
+  endShape();
   
   stroke(222, 184, 58);
   strokeWeight(1.6);
