@@ -138,6 +138,7 @@ void bird(int x, int y){
   bezierVertex(x-45, y-6, x-68, y-8, x-70, y+4); //upper neck stroke
   bezierVertex(x-65, y+12, x-52, y+12, x-48, y+10); //lower neck stroke
   bezierVertex(x+40, y-8, x+40, y+44, x, y+(int)180/2); //lower wing concave
+  endShape();
   arc(x+24, y-8, 30, 36, 3*PI/2, 2*PI);
   arc(x+40, y, 40, 20, 3*PI/2, PI+(3*PI/2));
   arc(x+24, y+8, 30, 36, 0, PI/2);
@@ -145,5 +146,4 @@ void bird(int x, int y){
   line(x-70, y+4, x-80, y+4); //beak
   line(x+60, y-2, x+115, y-2); // upper leg
   line(x+60, y+4, x+115, y+4); // lower leg
-  endShape();
 }
